@@ -3,8 +3,8 @@
 		http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.datastax</groupId>
-	<artifactId>datastax-starter</artifactId>
+	<groupId>com.datastax.demo</groupId>
+	<artifactId>datastax-tika-demo</artifactId>
 	<version>0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
@@ -12,6 +12,11 @@
 		<dependency>
 			<groupId>com.datastax.cassandra</groupId>
 			<artifactId>cassandra-driver-core</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.datastax.cassandra</groupId>
+			<artifactId>cassandra-driver-mapping</artifactId>
 			<version>3.1.0</version>
 		</dependency>
 		<dependency>
@@ -35,8 +40,19 @@
 			<artifactId>commons-logging</artifactId>
 			<version>1.2</version>
 		</dependency>
+		
+ <dependency>
+    <groupId>org.apache.tika</groupId>
+    <artifactId>tika-core</artifactId>
+    <version>1.15</version>
+  </dependency>
+  <dependency>
+	<groupId>org.apache.tika</groupId>
+    <artifactId>tika-parsers</artifactId>
+    <version>1.15</version>
+  </dependency>
 
-		<!-- Webservice libraries from Jersey -->
+<!--i Webservice librariesfrom Jersey -->
 		<dependency>
 			<groupId>com.sun.jersey</groupId>
 			<artifactId>jersey-server</artifactId>
