@@ -4,20 +4,20 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.datastax.demo</groupId>
-	<artifactId>datastax-tika-demo</artifactId>
+	<artifactId>datastax-java-starter</artifactId>
 	<version>0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
 	<dependencies>
 		<dependency>
-			<groupId>com.datastax.cassandra</groupId>
-			<artifactId>cassandra-driver-core</artifactId>
-			<version>3.1.0</version>
+			<groupId>com.datastax.dse</groupId>
+			<artifactId>dse-java-driver-core</artifactId>
+			<version>1.6.6</version>
 		</dependency>
 		<dependency>
-			<groupId>com.datastax.cassandra</groupId>
-			<artifactId>cassandra-driver-mapping</artifactId>
-			<version>3.1.0</version>
+			<groupId>com.datastax.dse</groupId>
+			<artifactId>dse-java-driver-mapping</artifactId>
+			<version>1.6.6</version>
 		</dependency>
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
@@ -41,16 +41,7 @@
 			<version>1.2</version>
 		</dependency>
 		
- <dependency>
-    <groupId>org.apache.tika</groupId>
-    <artifactId>tika-core</artifactId>
-    <version>1.15</version>
-  </dependency>
-  <dependency>
-	<groupId>org.apache.tika</groupId>
-    <artifactId>tika-parsers</artifactId>
-    <version>1.15</version>
-  </dependency>
+
 
 <!--i Webservice librariesfrom Jersey -->
 		<dependency>
